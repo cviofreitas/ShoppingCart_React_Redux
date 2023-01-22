@@ -1,0 +1,68 @@
+.ShoppingCartContainer {
+    top: 6vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 90vw;
+    height: fit-content;
+    /* border-radius: 15px; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    position: relative;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.357);
+}
+
+.ShoppingCartContainer h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px;
+
+    color: black;
+    position: relative;
+    margin: 3;
+    left: 0;
+}
+
+.cartContainer {
+    height: 100%;
+    min-width: 45%;
+    width: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    top: -1vh;
+    padding-bottom: 5vh;
+}
+
+.cartContainer h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px;
+    top: 2vh;
+    color: black;
+    position: relative;
+    margin: 0;
+    left: 0;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .cartContainer {
+        margin-top: 0;
+        top: -5vh;
+        order: 3;
+    }
+
+    .ShoppingCartContainer {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cartContainer h2 {
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,74 @@
+.CatalogContainer {
+    position: relative;
+    top: 10vh;
+
+}
+
+.CategoryBanner {
+    position: fixed;
+    top: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(101, 121, 105);
+    object-fit: contain;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(36, 74, 103, 0.553);
+}
+
+.CategoryBanner>img {
+
+    top: 10px;
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    opacity: 50%;
+}
+
+.CategoryBanner h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+    text-transform: capitalize;
+    font-size: 3rem;
+    width: 100vw;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.catalog {
+    display: grid;
+    margin: auto;
+    min-height: fit-content;
+    width: 90vw;
+    border-radius: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    position: relative;
+    z-index: 1;
+    top: 8vh;
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
+}
+
+@media only screen and (max-width: 600px) {
+    .catalog {
+
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+
+    .CategoryBanner h2 {
+        font-size: 2rem;
+    }
+}

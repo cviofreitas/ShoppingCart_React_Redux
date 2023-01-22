@@ -1,0 +1,139 @@
+.itemCard {
+    margin: 10px;
+
+    max-height: 350px;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.178);
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
+}
+
+.itemCard img {
+
+    display: block;
+    margin-left: auto;
+    margin-right: 5vw;
+    height: 150px;
+    width: 100%;
+    object-fit: contain;
+    background-color: white;
+}
+
+.overflow {
+    width: 190px;
+    overflow-wrap: break-word;
+    line-height: 16px;
+}
+
+.cardInfo {
+    padding: 0px;
+    line-height: 10px;
+    width: 180px;
+
+
+}
+
+.userInput {
+    display: flex;
+    height: 40px;
+    padding: 10px;
+    justify-content: space-around;
+    border-radius: 10px;
+
+}
+
+.AddButton {
+    margin: 5px;
+    width: 90%
+}
+
+.QTY {
+    width: 30%;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+label {
+    position: relative;
+    bottom: 8px;
+    left: 8px;
+    width: 0ch;
+    font-size: .8rem;
+
+}
+
+h4 {
+    color: rgb(63, 88, 145);
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.price {
+    color: rgb(98, 98, 98);
+}
+
+@media only screen and (max-width: 600px) {
+    .itemCard {
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        margin: 5px;
+        background-color: rgba(255, 255, 255, 0.556);
+        border-radius: 10px;
+    }
+
+    .imageInfoDisplay {
+        display: flex;
+    }
+
+    .imageInfoDisplay>img {
+        scale: .9;
+    }
+
+    .cardInfo h4 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .cardInfo .price {
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+
+    .overflow {
+        margin: 0;
+        padding: 0;
+        width: 150px;
+        overflow-wrap: break-word;
+        line-height: 16px;
+        font-size: .9rem;
+    }
+
+    .userInput {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        min-width: 160px;
+        position: relative;
+        right: 15%;
+        bottom: -93px;
+        scale: .9;
+    }
+
+    Button.css-sghohy-MuiButtonBase-root-MuiButton-root {
+        font-size: .7rem;
+        margin-left: 5px;
+        width: 90%;
+    }
+}

@@ -1,0 +1,95 @@
+.NavBar {
+    margin: 0;
+    position: fixed;
+    z-index: 20;
+    width: 90%;
+    height: 8vh;
+    background: linear-gradient(90deg, rgb(65, 124, 169) 20%, rgba(106, 166, 185));
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    padding-right: 15vh;
+    padding-left: 15vh;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 1px 5px 10px rgba(38, 38, 41, 0.658);
+
+}
+
+
+
+.NavLinks {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.homeButton {
+    fill: white;
+    scale: 1.5;
+}
+
+.cartButton {
+    scale: 1.5;
+
+}
+
+.itemCount {
+    font-family: 'Roboto Condensed', sans-serif;
+    position: absolute;
+    background-color: rgb(65, 124, 169);
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    left: 13px;
+    top: -5px;
+
+}
+
+.MuiButton {
+    background: none;
+}
+
+.MuiButton:hover {
+    transition: all 1s;
+    background: linear-gradient(90deg, rgba(17, 133, 196, 0.275), rgba(74, 147, 225, 0.396));
+}
+
+@media only screen and (max-width: 600px) {
+    .NavLinks {
+        font-size: .8rem;
+
+    }
+
+    .CategorySelectors {
+        justify-content: space-around;
+        margin: 0;
+        max-width: 20%;
+    }
+
+    .MuiButton {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .homeButton {
+        position: relative;
+        scale: 1.2;
+    }
+
+    .cartButton {
+        position: relative;
+        scale: 1.2;
+    }
+}

@@ -1,0 +1,71 @@
+.CartSummary {
+    background-color: aliceblue;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    margin-right: 4vh;
+    margin-bottom: 10vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    padding-bottom: 1.5vh;
+    width: 65%;
+    height: fit-content;
+    position: relative;
+    top: 5vh;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+.Summary {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.CartSummary .CheckOut {
+    width: 100%;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgb(46, 87, 119) 20%, rgb(86, 128, 142));
+    box-shadow: 1px 5px 10px rgba(36, 43, 61, 0.323);
+}
+
+
+
+
+.TotalCost {
+    font-size: 1.3rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    .CartSummary {
+        order: 1;
+        width: 80vw;
+        min-width: 65%;
+        margin: 0;
+        margin-bottom: 10vh;
+    }
+
+    .CartSummary .CheckOut {
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        font-size: 1.3rem;
+        padding-top: .3rem;
+        padding-bottom: .3rem;
+    }
+
+}
